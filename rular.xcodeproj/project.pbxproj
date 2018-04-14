@@ -15,6 +15,7 @@
 		03938F702081114700F89D73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03938F6F2081114700F89D73 /* LoginViewController.swift */; };
 		03938F762081621B00F89D73 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03938F752081621B00F89D73 /* SignUpViewController.swift */; };
 		03938F7A20825B1700F89D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03938F7920825B1700F89D73 /* GoogleService-Info.plist */; };
+		03938F7C208299C500F89D73 /* noAccountARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03938F7B208299C500F89D73 /* noAccountARViewController.swift */; };
 		8A62F7C8BFBD2BCD9CA0DC39 /* Pods_rular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2032AEC5E75753F74D8FAA29 /* Pods_rular.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		03938F6F2081114700F89D73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		03938F752081621B00F89D73 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		03938F7920825B1700F89D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		03938F7B208299C500F89D73 /* noAccountARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noAccountARViewController.swift; sourceTree = "<group>"; };
 		2032AEC5E75753F74D8FAA29 /* Pods_rular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CDE6B9448D2F19EF61F4046 /* Pods-rular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rular.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rular/Pods-rular.debug.xcconfig"; sourceTree = "<group>"; };
 		D00F21A83AF1807087834CE5 /* Pods-rular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rular.release.xcconfig"; path = "Pods/Target Support Files/Pods-rular/Pods-rular.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				03938F5D20810F1700F89D73 /* AppDelegate.swift */,
 				03938F5F20810F1700F89D73 /* ViewController.swift */,
 				03938F6120810F1700F89D73 /* Main.storyboard */,
+				03938F7B208299C500F89D73 /* noAccountARViewController.swift */,
 				03938F752081621B00F89D73 /* SignUpViewController.swift */,
 				03938F6F2081114700F89D73 /* LoginViewController.swift */,
 				03938F6420810F1800F89D73 /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03938F702081114700F89D73 /* LoginViewController.swift in Sources */,
+				03938F7C208299C500F89D73 /* noAccountARViewController.swift in Sources */,
 				03938F6020810F1700F89D73 /* ViewController.swift in Sources */,
 				03938F762081621B00F89D73 /* SignUpViewController.swift in Sources */,
 				03938F5E20810F1700F89D73 /* AppDelegate.swift in Sources */,
