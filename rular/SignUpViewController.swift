@@ -7,9 +7,11 @@
 //
 
 import UIKit
-
+import Firebase
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var emailtextfield: UITextField!
+    @IBOutlet weak var pwtextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,17 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerPressed(_ sender: Any) {
+        Auth.auth().createUser(withEmail: emailtextfield.text!, password: pwtextfield.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            }
+            else {
+                print("success")
+            }
+        }
     }
-    */
+    
+  
 
 }

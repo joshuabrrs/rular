@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,9 +53,11 @@
                                     <constraint firstAttribute="height" constant="180" id="d6A-WD-pWy"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wiw-ix-Ipl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wiw-ix-Ipl">
                                 <rect key="frame" x="95" y="459" width="185" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wiw-ix-Ipl" secondAttribute="height" multiplier="185:32" id="G2F-Gx-t3N"/>
+                                </constraints>
                                 <state key="normal" title="Skip registration"/>
                                 <connections>
                                     <segue destination="53x-Y5-vOL" kind="show" identifier="skipButton" id="Mge-k2-eYW"/>
@@ -63,8 +66,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.12549019607843137" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wiw-ix-Ipl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="0Kf-Y2-mir"/>
+                            <constraint firstItem="Wiw-ix-Ipl" firstAttribute="top" secondItem="dwY-nz-WSu" secondAttribute="bottom" constant="36" id="COj-3L-NRi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wiw-ix-Ipl" secondAttribute="trailing" constant="95" id="UZ7-ix-y62"/>
                             <constraint firstItem="dwY-nz-WSu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPE-Uu-dC9"/>
                             <constraint firstItem="dwY-nz-WSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBY-g6-kqb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wiw-ix-Ipl" secondAttribute="bottom" constant="176" id="z24-Rx-MD9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -101,10 +108,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQz-6s-T7w">
+                                <rect key="frame" x="159" y="447" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="registerPressed:" destination="n68-iE-9zV" eventType="touchUpInside" id="rUv-5N-uai"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.73333333333333328" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="f8L-Uj-ub0"/>
                     </view>
+                    <connections>
+                        <outlet property="emailtextfield" destination="hKR-Es-5rv" id="NIT-DU-eK7"/>
+                        <outlet property="pwtextfield" destination="4Yo-6u-NJj" id="vxg-55-WD1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BGU-fo-8wf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
