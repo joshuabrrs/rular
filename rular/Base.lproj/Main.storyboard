@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwY-nz-WSu" userLabel="Lview">
-                                <rect key="frame" x="20" y="243.5" width="335" height="180"/>
+                                <rect key="frame" x="34" y="243" width="306" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyS-na-dxR">
-                                        <rect key="frame" x="0.0" y="108" width="335" height="72"/>
+                                        <rect key="frame" x="0.0" y="108" width="306" height="72"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="26"/>
@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqz-dz-AAt">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="72"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="26"/>
@@ -48,15 +48,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="jTl-Fo-8bg"/>
-                                    <constraint firstAttribute="height" constant="180" id="jnl-hf-diR"/>
+                                    <constraint firstAttribute="width" constant="306" id="S5g-xK-fNa"/>
+                                    <constraint firstAttribute="height" constant="180" id="d6A-WD-pWy"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.12549019607843137" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dwY-nz-WSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ft-es-IOi"/>
-                            <constraint firstItem="dwY-nz-WSu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BO4-iw-TGy"/>
+                            <constraint firstItem="dwY-nz-WSu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPE-Uu-dC9"/>
+                            <constraint firstItem="dwY-nz-WSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oBY-g6-kqb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
