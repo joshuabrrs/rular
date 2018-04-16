@@ -16,6 +16,7 @@ class noAccountARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var measurements: UILabel!
     
     var dotNodes = [SCNNode]()
     var textNode = SCNNode()
@@ -92,6 +93,7 @@ class noAccountARViewController: UIViewController, ARSCNViewDelegate {
         
         let distance = (sqrt(pow(a, 2) + pow(b, 2) + pow(c, 2))/2.54) * 100
         updateText(text:"\(abs(distance)) inches", atPosition: end.position)
+        measurements.text="\(abs(distance)) inches"
     }
     func updateText(text: String, atPosition: SCNVector3){
         textNode.removeFromParentNode()
@@ -104,6 +106,7 @@ class noAccountARViewController: UIViewController, ARSCNViewDelegate {
         textNode.scale = SCNVector3(0.01, 0.01, 0.01)
         
         sceneView.scene.rootNode.addChildNode(textNode)
+        
     }
 }
 
