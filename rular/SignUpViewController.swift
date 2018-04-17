@@ -10,19 +10,20 @@ import UIKit
 import Firebase
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var emailtextfield: UITextField!
     @IBOutlet weak var pwtextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    registerButton.layer.cornerRadius = 25
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func registerPressed(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailtextfield.text!, password: pwtextfield.text!) { (user, error) in
             if error != nil {
