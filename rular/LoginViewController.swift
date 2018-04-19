@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var emailTextfield: UITextField!
+    
+    @IBOutlet weak var pwTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,8 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func loginPressed(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
