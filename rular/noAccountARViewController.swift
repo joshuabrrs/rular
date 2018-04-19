@@ -68,7 +68,7 @@ class noAccountARViewController: UIViewController, ARSCNViewDelegate {
     func addDot(at hitResult : ARHitTestResult){
         let dotGeometry = SCNSphere(radius: 0.005)
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.red
+        material.diffuse.contents = UIColor.blue
         
         dotGeometry.materials = [material]
         let dotNode = SCNNode(geometry: dotGeometry)
@@ -102,7 +102,7 @@ class noAccountARViewController: UIViewController, ARSCNViewDelegate {
         textGeometry.firstMaterial?.diffuse.contents = UIColor.blue
         
         textNode = SCNNode(geometry: textGeometry)
-        textNode.position = SCNVector3(atPosition.x, atPosition.y + 0.01, atPosition.z)
+        textNode.position = SCNVector3(atPosition.x, atPosition.y, atPosition.z)
         textNode.scale = SCNVector3(0.01, 0.01, 0.01)
         
         sceneView.scene.rootNode.addChildNode(textNode)
