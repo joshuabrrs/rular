@@ -167,7 +167,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginPressed:" destination="N2u-Ov-79f" eventType="touchUpInside" id="LGC-KS-X0R"/>
-                                    <segue destination="53x-Y5-vOL" kind="show" id="xBD-Sv-kPo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,6 +176,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="vSF-TM-Ykb" id="Jvk-Dj-2hf"/>
                         <outlet property="pwTextfield" destination="L8l-y0-vCV" id="r9R-lm-XAx"/>
+                        <segue destination="53x-Y5-vOL" kind="show" identifier="goToAR" id="EhR-FT-sgw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTM-QK-DmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,6 +224,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xBD-Sv-kPo"/>
+        <segue reference="EhR-FT-sgw"/>
     </inferredMetricsTieBreakers>
 </document>
