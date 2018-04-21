@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //pers
 
     @IBAction func loginPressed(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextfield.text!, password: pwTextfield.text!) { (user, error) in
@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
             else{
                 print("success")
                 self.performSegue(withIdentifier: "goToAR", sender: self)
+          
             }
         }
     }

@@ -23,6 +23,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     @IBAction func registerPressed(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailtextfield.text!, password: pwtextfield.text!) { (user, error) in
@@ -32,6 +33,7 @@ class SignUpViewController: UIViewController {
             else {
                 print("success")
                 self.performSegue(withIdentifier: "newSignUp", sender: self)
+             
             }
         }
     }
