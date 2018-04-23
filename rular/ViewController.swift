@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = 25
         signupButton.layer.cornerRadius = 25
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signupButton: UIButton!

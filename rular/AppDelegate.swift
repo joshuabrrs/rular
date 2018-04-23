@@ -20,7 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         Database.database().isPersistenceEnabled = true
-    
+        let storyboard = UIStoryboard(name: "", bundle: .main)
+        
+        // 2
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            // 3
+            window?.rootViewController = initialViewController
+            // 4
+            window?.makeKeyAndVisible()
+        }
+
         
         return true
     }
