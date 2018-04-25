@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         Database.database().isPersistenceEnabled = true
-        let storyboard = UIStoryboard(name: "", bundle: .main)
 
         return true
     }

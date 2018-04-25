@@ -93,36 +93,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-Es-5rv">
-                                <rect key="frame" x="66" y="231" width="243" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-6u-NJj">
-                                <rect key="frame" x="66" y="280" width="243" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQz-6s-T7w">
-                                <rect key="frame" x="121" y="341" width="132" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
-                                <state key="normal" title="Register">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="registerPressed:" destination="n68-iE-9zV" eventType="touchUpInside" id="rUv-5N-uai"/>
-                                    <segue destination="53x-Y5-vOL" kind="show" identifier="newSignUp" id="9if-WU-GGJ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxW-9E-2oD">
+                                <rect key="frame" x="49" y="192" width="276" height="282"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-6u-NJj">
+                                        <rect key="frame" x="17" y="126" width="243" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-Es-5rv">
+                                        <rect key="frame" x="17" y="69" width="243" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQz-6s-T7w">
+                                        <rect key="frame" x="72" y="189" width="132" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.3411764705882353" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="n68-iE-9zV" eventType="touchUpInside" id="rUv-5N-uai"/>
+                                            <segue destination="53x-Y5-vOL" kind="show" identifier="newSignUp" id="9if-WU-GGJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hKR-Es-5rv" secondAttribute="trailing" constant="16" id="1hn-uU-6GN"/>
+                                    <constraint firstItem="4Yo-6u-NJj" firstAttribute="top" secondItem="hKR-Es-5rv" secondAttribute="bottom" constant="27" id="3ep-Pb-sh5"/>
+                                    <constraint firstItem="hKR-Es-5rv" firstAttribute="top" secondItem="lxW-9E-2oD" secondAttribute="top" constant="69" id="GdV-m9-SIO"/>
+                                    <constraint firstAttribute="height" constant="282" id="GzZ-2F-7jW"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Yo-6u-NJj" secondAttribute="trailing" constant="16" id="HxH-3V-FSn"/>
+                                    <constraint firstItem="4Yo-6u-NJj" firstAttribute="leading" secondItem="lxW-9E-2oD" secondAttribute="leading" constant="17" id="OFI-eZ-za9"/>
+                                    <constraint firstItem="4Yo-6u-NJj" firstAttribute="top" secondItem="hKR-Es-5rv" secondAttribute="bottom" constant="27" id="SJy-bu-09u"/>
+                                    <constraint firstItem="hKR-Es-5rv" firstAttribute="leading" secondItem="lxW-9E-2oD" secondAttribute="leading" constant="17" id="UXS-bN-rbM"/>
+                                    <constraint firstAttribute="width" constant="276" id="Yha-FI-hui"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.12549019610000001" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lxW-9E-2oD" firstAttribute="centerX" secondItem="g3c-p7-NmR" secondAttribute="centerX" id="GkE-n9-eRV"/>
+                            <constraint firstItem="lxW-9E-2oD" firstAttribute="centerY" secondItem="g3c-p7-NmR" secondAttribute="centerY" id="PjJ-Pk-4h4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f8L-Uj-ub0"/>
                     </view>
                     <connections>
@@ -224,6 +243,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mge-k2-eYW"/>
+        <segue reference="9if-WU-GGJ"/>
     </inferredMetricsTieBreakers>
 </document>
